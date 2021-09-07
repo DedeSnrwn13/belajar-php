@@ -1,6 +1,8 @@
 <?php 
 
-$kota = "Bandung"
+// $kota = ucwords("jakarta"); // untuk membuat huruf prtama pada setiap kata jadi Kapital
+// $kota = strtolower("BANDUNG"); // untuk membuat huruf menjadi kecil semua
+// $kota = strtoupper("semarang"); // untuk membuat huruf menjadi Kapital semua
 
 ?>
 
