@@ -1,14 +1,15 @@
 <?php 
 
-$a = [250, true, ["jeruk", "pepaya", "pisang"]];
-echo $a[2][0];
+$pesan = null;
 
-$herbivora = ["kambing", "sapi", "kerbau"];
-$karnivora = ["harimau", "singa", "serigala"];
-$omnivora = ["ayam", "monyet", "babi"];
+$datadiri = [
+    'nama' => 'Michael',
+    'goldarah' => null,
+    'alamat' => 'Jayapura'
+];
 
-$binatang = ["herbivora" => $herbivora, "karnivora" => $karnivora, "omnivora" => $omnivora];
-
-echo $binatang["karnivora"][2];
+echo $datadiri['status'] ?? 'Data Tidak Ada';
+// echo $datadiri['goldarah'];
+// echo $pesan;
 
 ?>
