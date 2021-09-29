@@ -1,19 +1,14 @@
 <?php 
 
-// Cara 1
-// $datadiri["nama"] = "Robi";
-// $datadiri["goldarah"] = "A";
-// $datadiri["alamat"] = "Batam";
+$a = [250, true, ["jeruk", "pepaya", "pisang"]];
+echo $a[2][0];
 
-// Cara 2
-$datadiri = [
-    "nama" => "Budi",
-    "goldarah" => "O",
-    "alamat" => "Jakarta"
-];
+$herbivora = ["kambing", "sapi", "kerbau"];
+$karnivora = ["harimau", "singa", "serigala"];
+$omnivora = ["ayam", "monyet", "babi"];
 
-echo "Nama: " . $datadiri["nama"] . "<br>";
-echo "Gol Darah: " . $datadiri["goldarah"] . "<br>";
-echo "Alamat: " . $datadiri["alamat"] . "<br>";
+$binatang = ["herbivora" => $herbivora, "karnivora" => $karnivora, "omnivora" => $omnivora];
+
+echo $binatang["karnivora"][2];
 
 ?>
