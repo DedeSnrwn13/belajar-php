@@ -1,10 +1,13 @@
 <?php 
 
-$a = 10;
-$b = 3;
-$c = $a / $b;
+// Cara 1
+$nama = "Asep";
+$pesan = "Selamat Datang, $nama";
+echo $pesan;
 
-// echo $c;
-echo round($c);
-// fungsi round ototmatis membulatkan jika lebih dari 0,5
+// Cara 2 - concat
+$nama2 = "Asep";
+$pesan2 = "Selamat Datang, " . $nama2;
+echo $pesan2;
+
 ?>
