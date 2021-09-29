@@ -1,13 +1,9 @@
 <?php 
 
-// Cara 1
-$nama = "Asep";
-$pesan = "Selamat Datang, $nama";
-echo $pesan;
+$a = 10;
+$b = 5;
+$c = $a == $b;
 
-// Cara 2 - concat
-$nama2 = "Asep";
-$pesan2 = "Selamat Datang, " . $nama2;
-echo $pesan2;
+var_dump($c);
 
 ?>
