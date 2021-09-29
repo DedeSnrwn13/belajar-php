@@ -1,9 +1,8 @@
 <?php 
 
-$a = 10;
-$b = 5;
-$c = $a == $b;
-
-var_dump($c);
+$a = array("Ayam", "Kuda", "Buaya");
+// Menambah data kedalam Array
+$a[] = "Babi";
+print_r($a);
 
 ?>
