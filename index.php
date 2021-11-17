@@ -1,15 +1,10 @@
-<?php 
-
-$pesan = null;
-
-$datadiri = [
-    'nama' => 'Michael',
-    'goldarah' => null,
-    'alamat' => 'Jayapura'
-];
-
-echo $datadiri['status'] ?? 'Data Tidak Ada';
-// echo $datadiri['goldarah'];
-// echo $pesan;
-
+<?php
+    $nama   = "Toni Haryanto";
 ?>
+<!DOCTYPE html>
+<html>
+<body>
+    <h1>Selamat Datang <?php echo $nama; ?></h1>
+    <p>Selamat belajar pemrograman PHP</p>
+</body>
+</html>
