@@ -1,17 +1,24 @@
 <?php
-    $nama   = $_GET['nama'];
-    $alamat = $_GET['alamat'];
+    if (!empty($_POST['proses'])) {
+        print_r($_POST);
+    }
 ?>
 <!DOCTYPE html>
 <html>
 <body>
-    <form action="">
-        <input type="text" name="nama">
-        <input type="text" name="alamat">
-        <input type="submit" value="submit">
+    <form action="" method="post">
+        Nama : <input type="text" name="nama">
+        <br><br>
+        Alamat : <textarea type="text" name="alamat"></textarea>
+        <br><br>
+        Program Studi :
+        <select name="program_studi" id="">
+            <option value="SI">Sistem Informasi</option>
+            <option value="TI">Teknik Informatika</option>
+            <option value="MI">Manajemen Informatika</option>
+        </select>
+        <br><br>
+        <input type="submit" name="proses" value="submit">
     </form>
-    <h1>Selamat Datang <?php echo $nama; ?></h1>
-    <h1>Alamat <?php echo $alamat; ?></h1>
-    <p>Selamat belajar pemrograman PHP</p>
 </body>
 </html>
