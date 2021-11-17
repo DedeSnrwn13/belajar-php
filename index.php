@@ -8,7 +8,7 @@
     <form action="">
         <input type="text" name="nama">
         <input type="text" name="alamat">
-        <input type="submit">
+        <input type="submit" value="submit">
     </form>
     <h1>Selamat Datang <?php echo $nama; ?></h1>
     <h1>Alamat <?php echo $alamat; ?></h1>
