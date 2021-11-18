@@ -1,16 +1,15 @@
 <?php
-    $nama = "dede";
-    $nilai = 45;
+    $nilai = 35;
 
-    if ($nama == 'dede') {
-        echo "Selamat Datang Dede Sunarwan";
+    if ($nilai >= 80) {
+        echo "Nilai Anda A";
+    } elseif ($nilai >= 70) {
+        echo "Nilai Anda B";
+    } elseif ($nilai >= 50) {
+        echo "Nilai Anda C";
+    } elseif ($nilai >= 40) {
+        echo "Nilai Anda D";
     } else {
-        echo "Kamu bukan Dede";
-    }
-
-    if ($nilai >= 50) {
-        echo "Anda lulus. Nilai Anda " . $nilai;
-    } else {
-        echo "Maaf Anda belum lulus. Nilai anda " . $nilai;
+        echo "Nilai Anda E";
     }
 ?>
