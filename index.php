@@ -1,19 +1,21 @@
 <?php
-    $nilai_tes = 70;
-    $wawanacara = "A";
+    $nilai = "z";
 
-    // Nilai test lebih dari 70
-    if ($nilai_tes >= 70) {
-        echo "Anda lulus";
-
-        if ($wawancara = 'A') {
-            echo "Predikat Anda sangat memuaskan";
-        } else if ($wawancara = 'B') {
-            echo "Predikat Anda memuaskan";
-        } else {
-            echo "Predikat anda cukup";
-        }
-    } else {
-        echo "Anda belum lulus";
+    switch ($nilai) {
+        case 'A':
+            echo "Nilai anda sangat memuaskan";
+            break;
+        case 'B': 
+            echo "Nilai anda memuaskan";
+            break;
+        case 'C': 
+            echo "Nilai anda cukup";
+            break;
+        case 'D': 
+            echo "Nilai anda kurang";
+            break;
+        default:
+            echo "Nilai anda sangat kurang";
+            break;
     }
 ?>
