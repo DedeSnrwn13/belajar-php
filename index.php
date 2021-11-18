@@ -1,21 +1,21 @@
 <?php
-    $nilai = "z";
+    $warna = "Biru";
+    $ukuran = "XL";
 
-    switch ($nilai) {
-        case 'A':
-            echo "Nilai anda sangat memuaskan";
-            break;
-        case 'B': 
-            echo "Nilai anda memuaskan";
-            break;
-        case 'C': 
-            echo "Nilai anda cukup";
-            break;
-        case 'D': 
-            echo "Nilai anda kurang";
-            break;
-        default:
-            echo "Nilai anda sangat kurang";
-            break;
+    $biaya = 80000;
+    $biaya_tambahan = 15000;
+
+    // Pengecekan untuk ukuran XL dengan warna kain merah, dikenakan biaya tambahan
+    if ($warna == 'Merah' && $ukuran == 'XL') {
+        echo "Total harga = ". $biaya + $biaya_tambahan;
+    } else {
+        echo "Total harga = ". $biaya;
+    }
+
+    // Pengecekan untuk ukuran XL atau warna kain merah, dikenakan baiay tambahan
+    if ($warna == 'Merah' || $ukuran == 'XL') {
+        echo "Total harga = ". $biaya + $biaya_tambahan;
+    } else {
+        echo "Total harga = ". $biaya;
     }
 ?>
