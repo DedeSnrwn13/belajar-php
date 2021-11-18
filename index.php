@@ -1,21 +1,11 @@
 <?php
-    $warna = "Biru";
-    $ukuran = "XL";
+   $nilai = 70;
+   
+   if ($nilai >= 80) {
+       echo "Anda lulus";
+   } else {
+       echo "Anda tidak lulus";
+   }
 
-    $biaya = 80000;
-    $biaya_tambahan = 15000;
-
-    // Pengecekan untuk ukuran XL dengan warna kain merah, dikenakan biaya tambahan
-    if ($warna == 'Merah' && $ukuran == 'XL') {
-        echo "Total harga = ". $biaya + $biaya_tambahan;
-    } else {
-        echo "Total harga = ". $biaya;
-    }
-
-    // Pengecekan untuk ukuran XL atau warna kain merah, dikenakan baiay tambahan
-    if ($warna == 'Merah' || $ukuran == 'XL') {
-        echo "Total harga = ". $biaya + $biaya_tambahan;
-    } else {
-        echo "Total harga = ". $biaya;
-    }
+   echo ($nilai >= 80) ? "Anda lulus" : "Anda tidak lulus";
 ?>
