@@ -1,15 +1,19 @@
 <?php
-    $nilai = 35;
+    $nilai_tes = 70;
+    $wawanacara = "A";
 
-    if ($nilai >= 80) {
-        echo "Nilai Anda A";
-    } elseif ($nilai >= 70) {
-        echo "Nilai Anda B";
-    } elseif ($nilai >= 50) {
-        echo "Nilai Anda C";
-    } elseif ($nilai >= 40) {
-        echo "Nilai Anda D";
+    // Nilai test lebih dari 70
+    if ($nilai_tes >= 70) {
+        echo "Anda lulus";
+
+        if ($wawancara = 'A') {
+            echo "Predikat Anda sangat memuaskan";
+        } else if ($wawancara = 'B') {
+            echo "Predikat Anda memuaskan";
+        } else {
+            echo "Predikat anda cukup";
+        }
     } else {
-        echo "Nilai Anda E";
+        echo "Anda belum lulus";
     }
 ?>
