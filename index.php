@@ -1,24 +1,16 @@
 <?php
-    if (!empty($_POST['proses'])) {
-        print_r($_POST);
+    $nama = "dede";
+    $nilai = 45;
+
+    if ($nama == 'dede') {
+        echo "Selamat Datang Dede Sunarwan";
+    } else {
+        echo "Kamu bukan Dede";
+    }
+
+    if ($nilai >= 50) {
+        echo "Anda lulus. Nilai Anda " . $nilai;
+    } else {
+        echo "Maaf Anda belum lulus. Nilai anda " . $nilai;
     }
 ?>
-<!DOCTYPE html>
-<html>
-<body>
-    <form action="" method="post">
-        Nama : <input type="text" name="nama">
-        <br><br>
-        Alamat : <textarea type="text" name="alamat"></textarea>
-        <br><br>
-        Program Studi :
-        <select name="program_studi" id="">
-            <option value="SI">Sistem Informasi</option>
-            <option value="TI">Teknik Informatika</option>
-            <option value="MI">Manajemen Informatika</option>
-        </select>
-        <br><br>
-        <input type="submit" name="proses" value="submit">
-    </form>
-</body>
-</html>
