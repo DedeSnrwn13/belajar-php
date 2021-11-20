@@ -1,14 +1,23 @@
 <?php
-   $komunitas  = ['haji','gugun','parah','sih','tapi','orang','dahlah',
-            'alasan','halah','rindu','tidak','dia', 'senang', 'sangat'];
+   $siswa = [
+            ['nama' => 'Riki', 'kelas' => '2A'],
+            ['nama' => 'Azli', 'kelas' => '2B'],
+            ['nama' => 'Benar', 'kelas' => '2C'],
+            ['nama' => 'Sabar', 'kelas' => '2D'],
+       ];
     
 
-    foreach ($komunitas as $key => $nama) {
-        echo "Nama: $nama <br>";
+    foreach ($siswa as $key => $value) {
+        if ($value['kelas'] == '2A') 
+            continue;
 
-        if ($nama == 'gugun') {
-            echo "Gugun ada di indeks ke-$key <br>";
-            break;
-        }
+        echo "Nama: ". $value['nama'] . "<br>";
+        echo "Kelas: ". $value['kelas'] . "<br><br>";
+        
+
+        // if ($value['kelas'] != '2A') {
+        //     echo "Nama: ". $value['nama'] . "<br>";
+        //     echo "Kelas: ". $value['kelas'] . "<br><br>";
+        // }
     } 
 ?>
