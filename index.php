@@ -4,13 +4,13 @@
     
     $jumlah_merah = 0;
 
-    $i = 0;
-    while ($i < 15) {
-        if ($warna[$i] == 'merah') {
+    foreach ($warna as $key => $value) {
+        echo "Index ke-$key berisi nilai $value <br>";
+
+        if ($value == 'merah') {
             $jumlah_merah++;
         }
-        $i++;
-    }   
+    } 
 
     echo "Jumlah warna merah pada array sebanyak $jumlah_merah";
 ?>
