@@ -1,11 +1,16 @@
 <?php
-   $nilai = 70;
-   
-   if ($nilai >= 80) {
-       echo "Anda lulus";
-   } else {
-       echo "Anda tidak lulus";
+    // menanjak
+   for ($increment = 0; $increment <= 10; $increment++) { 
+       echo "$increment . Selamat datang! <br>";
    }
 
-   echo ($nilai >= 80) ? "Anda lulus" : "Anda tidak lulus";
+   // menurun
+   for ($i = 10; $i >= 1; $i--) { 
+       echo "$i . Selamat datang! <br>";
+   }
+
+   // keliapatan 2
+   for ($i = 0; $i <= 10; $i += 2) { 
+       echo "$i . Selamat datang! <br>";
+   }
 ?>
