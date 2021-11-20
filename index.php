@@ -1,16 +1,16 @@
 <?php
-    // menanjak
-   for ($increment = 0; $increment <= 10; $increment++) { 
-       echo "$increment . Selamat datang! <br>";
-   }
+   $warna  = [
+                'merah','biru','kuning','merah','hijau','orange','ungu',
+                'biru','kuning','merah','hijau','orange', 'ungu', 'merah'
+            ];
+    
+    $jumlah_merah = 0;
 
-   // menurun
-   for ($i = 10; $i >= 1; $i--) { 
-       echo "$i . Selamat datang! <br>";
-   }
+    for ($i = 0; $i < count($warna); $i++) { 
+        if ($warna[$i] == 'merah') {
+            $jumlah_merah++;
+        }
+    }
 
-   // keliapatan 2
-   for ($i = 0; $i <= 10; $i += 2) { 
-       echo "$i . Selamat datang! <br>";
-   }
+    echo "Jumlah warna merah pada array sebanyak $jumlah_merah";
 ?>
