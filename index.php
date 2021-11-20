@@ -1,16 +1,14 @@
 <?php
-   $warna  = ['merah','biru','kuning','merah','hijau','orange','ungu',
-            'biru','kuning','merah','hijau','orange', 'ungu', 'merah'];
+   $komunitas  = ['haji','gugun','parah','sih','tapi','orang','dahlah',
+            'alasan','halah','rindu','tidak','dia', 'senang', 'sangat'];
     
-    $jumlah_merah = 0;
 
-    foreach ($warna as $key => $value) {
-        echo "Index ke-$key berisi nilai $value <br>";
+    foreach ($komunitas as $key => $nama) {
+        echo "Nama: $nama <br>";
 
-        if ($value == 'merah') {
-            $jumlah_merah++;
+        if ($nama == 'gugun') {
+            echo "Gugun ada di indeks ke-$key <br>";
+            break;
         }
     } 
-
-    echo "Jumlah warna merah pada array sebanyak $jumlah_merah";
 ?>
