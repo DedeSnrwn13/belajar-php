@@ -1,11 +1,19 @@
 <?php
-   function cetakPesan($nama = null) {
-       if (empty($nama)) {
-           echo "Selamat Datang!";
-       } else {
-           echo "Selamat datang, $nama!";
-       }
-   }
+    $alas = 10;
+    $tinggi = 20;
 
-   cetakPesan('rizal');
+    function luasSegiTiga($alas, $tinggi)
+    {
+        $luas = $alas * $tinggi / 2;
+        return $luas;
+    }
+
+    function luasJajarGenjang($alas, $tinggi)
+    {
+        $luas = $alas + $tinggi * 2;
+        return $luas;
+    }
+
+    echo $luasSegiTiga = luasSegiTiga($alas, $tinggi);
+    echo $luasJajarGenjang = luasJajarGenjang($alas, $tinggi);
 ?>
