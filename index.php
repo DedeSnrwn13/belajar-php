@@ -1,19 +1,17 @@
 <?php
-    $alas = 10;
-    $tinggi = 20;
 
-    function luasSegiTiga($alas, $tinggi)
-    {
-        $luas = $alas * $tinggi / 2;
-        return $luas;
-    }
+function kaliLiapat(&$angka)
+{
+    $angka = $angka * 2;
+}
 
-    function luasJajarGenjang($alas, $tinggi)
-    {
-        $luas = $alas + $tinggi * 2;
-        return $luas;
-    }
-
-    echo $luasSegiTiga = luasSegiTiga($alas, $tinggi);
-    echo $luasJajarGenjang = luasJajarGenjang($alas, $tinggi);
+$x = 20;
+echo $x .'<br>';
+kaliLiapat($x);
+echo $x .'<br>';
+kaliLiapat($x);
+echo $x .'<br>';
+kaliLiapat($x);
+echo $x .'<br>';
+kaliLiapat($x);
 ?>
