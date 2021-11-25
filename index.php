@@ -1,8 +1,10 @@
 <?php
 
 $todos = [];
-$file = file_get_contents('todo.txt');
-$todos = unserialize($file);
+if (file_exists('todo.txt')) {
+    $file = file_get_contents('todo.txt');
+    $todos = unserialize($file);
+}
 
 if (isset($_POST['todo'])) {
     $data = $_POST['todo'];
@@ -32,21 +34,13 @@ if (isset($_POST['todo'])) {
     </form>
 
     <ul>
-        <li>
-            <input type="checkbox" name="todo">
-            <label> Todo 1</label>
-            <a href='#'>hapus</a>
-        </li>
-        <li>
-            <input type="checkbox" name="todo">
-            <label> Todo 1</label>
-            <a href='#'>hapus</a>
-        </li>
-        <li>
-            <input type="checkbox" name="todo">
-            <label> Todo 1</label>
-            <a href='#'>hapus</a>
-        </li>
+        <?php foreach ($todos as $key => $value): ?>
+            <li>
+                <input type="checkbox" name="todo">
+                <label><?php echo $value['todo']; ?></label>
+                <a href='#'>hapus</a>
+            </li>
+        <?php endforeach; ?>
     </ul>
 </body>
 </html>
